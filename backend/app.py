@@ -1,10 +1,12 @@
 from flask import Flask, request, jsonify, make_response
+from flask_cors import CORS
 
 # 新增載入模組
 from sklearn.externals import joblib
 import numpy as np
 
 app = Flask(__name__)
+CORS(app)
 
 # 測試資料
 # iris = [5.1, 3.5, 1.4, 0.2] # Iris Setosa
