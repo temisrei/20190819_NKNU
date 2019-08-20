@@ -39,7 +39,16 @@ $(function () {
     liff.sendMessages([
       {
         type: 'text',
+        text: 'RGY 主人您好！',
+      },
+      {
+        type: 'text',
         text: answer.html(),
+      },
+      {
+        type: "image",
+        originalContentUrl: "https://s3.amazonaws.com/cdn.brecks.com/images/350/63822.jpg",
+        previewImageUrl: "https://s3.amazonaws.com/cdn.brecks.com/images/350/63822.jpg"
       }
     ]);
     liff.closeWindow();
