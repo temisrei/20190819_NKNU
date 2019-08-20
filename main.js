@@ -26,7 +26,7 @@ $(function () {
   btnPredict.click(function () {
     getIrisData();
     $.ajax({
-      url: "https://serene-caverns-64322.herokuapp.com/api?iris=" + iris,
+      url: "[改為自己的 Github Pages 前端網址]/api?iris=" + iris,
       success: function (response) {
         console.log(response);
         answer.html(response.result);
